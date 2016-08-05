@@ -1,0 +1,27 @@
+.full {
+    background: url('img/universy.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.img
+{
+	background="img/universy.jpg";
+}
+
+h1
+{
+	color: white;
+}
+
+p
+{
+	color:white;
+}
+
+#footer
+{
+	
+}

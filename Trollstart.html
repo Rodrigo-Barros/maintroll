@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Main Troll</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/full.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/gif" href="img/Fav_shield.gif"/>
+</head>
+<body class="full">
+	
+	<div class="container">
+		<center>
+		<img height='70%' width='70%' class='img'src="img/LOGO_MT.png">
+        <p>&nbsp;</p>
+		</center>
+		<div class="row">
+			
+			<div class="col-sm-offset-3 col-sm-6 col-md-6 col-lg-6"><!--essa parte do código não define nenhum espaçamento no tamanho xs,então como não existe nenhum padrão ultilizado ele usa as 12 colunas disponíveis na div para celulares-->
+				
+				<!--<div class="form-inline" role="form">--><!--estiliza o form para deixar o texto e o form na mesma linha-->
+				<div class="form-group">
+					<form method="get" action="Trollmain.php">
+						<div class="input-group">
+							<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome de invocador"/>
+							<span class="input-group-btn">
+									<button class="btn-square btn-danger  dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										BR
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										<li><a href="#" onclick="selectserver('br')">Brazil</a></li>
+										<li><a href="#" onclick="selectserver('eune')">EU East</a></li>
+										<li><a href="#" onclick="selectserver('euw')">EU West</a></li>
+										<li><a href="#" onclick="selectserver('jp')">Japan</a></li>
+										<li><a href="#" onclick="selectserver('kr')">Korea</a></li>
+										<li><a href="#" onclick="selectserver('lan')">Latin North</a></li>
+										<li><a href="#" onclick="selectserver('las')">Latin South</a></li>
+										<li><a href="#" onclick="selectserver('na')">America</a></li>
+										<li><a href="#" onclick="selectserver('oce')">Oceania</a></li>
+										<li><a href="#" onclick="selectserver('ru')">Russia</a></li>
+										<li><a href="#" onclick="selectserver('tr')">Turkey</a></li>									
+									</ul>
+								<button class="btn btn-primary" type="submit" >
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+							</div>	
+
+						<input id = "server" type="hidden" name="server" value="br">
+					</form>
+				</div>
+				
+				<span id="trollpoints"></span>
+			</div>
+
+		</div><!-- fim da navbar e da caixa de pesquisa-->
+		
+		<nav class="navbar-fixed-bottom">
+		  <div class="container text-center">
+		    <p style="color:white">Copyright © <b style="color:red">Red Devs</b> 2016 - <a href="About.html">About us</a></p>
+		  </div>
+		</nav>
+		
+
+<script>
+
+
+function selectserver(servers){
+	document.getElementById("server").value = servers;
+	var aux = servers.toUpperCase();
+	document.getElementById("dropdownMenu1").innerHTML = aux+" "+"<span class='caret'></span>";
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+crossorigin="anonymous">
+</script>
+
+</body>
+</html>

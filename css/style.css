@@ -1,0 +1,19 @@
+@import "compass/css3";
+
+$height-footer: 60px;
+
+
+  body {
+    margin-bottom: $height-footer;
+  }
+  #footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: $height-footer;
+    background-color: #AF0000;
+    .footer-block {
+      margin: 20px 0;
+    }
+  }
+}
