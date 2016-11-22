@@ -1,5 +1,5 @@
 # maintroll
-melhorias futuras
-NOK colocar páginas de ads.
-Colocar botões das redes sociais.
-Colocar botões para curtir à página no Facebook.
+# melhorias futuras
+# NOK colocar páginas de ads.
+# NOK Colocar botões das redes sociais.
+# NOK Colocar botões para curtir à página no Facebook.
